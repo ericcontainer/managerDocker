@@ -1,2 +1,2 @@
 Manager Docker using Django
-references: http://c2journal.com/2013/01/24/social-logins-with-django/
+https://www.mindmup.com/#m:g10B2AP7rF0WVeGWFBiRlhVQklEQzA

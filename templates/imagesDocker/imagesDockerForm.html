@@ -1,0 +1,17 @@
+{% extends "base_imagesDocker.html" %}
+
+{% block content %}
+<div class="container-fluid">
+	<form class="form-group">
+		    <h2>Add Repo URL</h2>
+	        <label for="inputRepo" class="sr-only">URL Address</label>
+	        <input type="email" id="inputEmail" class="form-control" placeholder="URL Address" required autofocus>
+	        <label for="inputPassword" class="sr-only">Description</label>
+	        <input type="text" id="inputDesc" class="form-control" placeholder="Description">
+	        <br>
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
+	    
+      </form>
+</div>
+
+{% endblock %}
