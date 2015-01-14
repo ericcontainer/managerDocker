@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Bootstrap -->
-	<script src="/static/js/bootstrap.min.js"></script>
-	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://d3oypxn00j2a10.cloudfront.net/0.13.0/favicon_whale.png">
+
     <title>Manager Docker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/dashboard.css" rel="stylesheet">
+
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
   </head>
-  
+
   <body>
-  	{% block content %}{% endblock %}
+
+	   	{% block navbar %} {% endblock navbar %}
+    	{% block menu %} {% endblock menu %}
+		{% block images %} {% endblock images %}
+    	{% block containers %} {% endblock containers %}
+
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/static/js/bootstrap.min.js"></script>
+	    <script src="/static/js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>

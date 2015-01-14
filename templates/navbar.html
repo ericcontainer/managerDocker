@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block navbarr %}
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          </button>
+          <a class="navbar-brand" href="#">DOCKER MANAGER</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+    		<p class="navbar-text navbar-right">Signed in as: <a href="#" class="navbar-link"> {{ user }}</a></p></a>      
+        </div>
+      </div>
+    </nav>
+{% endblock navbarr %}

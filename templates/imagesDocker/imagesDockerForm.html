@@ -1,17 +1,31 @@
 {% extends "base_imagesDocker.html" %}
 
-{% block content %}
-<div class="container-fluid">
-	<form class="form-group">
-		    <h2>Add Repo URL</h2>
-	        <label for="inputRepo" class="sr-only">URL Address</label>
-	        <input type="email" id="inputEmail" class="form-control" placeholder="URL Address" required autofocus>
-	        <label for="inputPassword" class="sr-only">Description</label>
-	        <input type="text" id="inputDesc" class="form-control" placeholder="Description">
-	        <br>
-	        <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
-	    
-      </form>
+{% block buttonsImageForm %} 
+	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Add </button>
+	<button class="btn btn-primary"> Remove </button>
+
+{% endblock buttonsImageForm %}
+
+{% block imagesForm %}
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-{% endblock %}
+{% endblock imagesForm %}
+
+

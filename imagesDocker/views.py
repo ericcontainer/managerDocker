@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
 
 
-def add_repo(request):
+def home(request):
 	return render(request, "imagesDockerForm.html")
