@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://d3oypxn00j2a10.cloudfront.net/0.13.0/favicon_whale.png">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="https://d3oypxn00j2a10.cloudfront.net/0.13.0/favicon_whale.png">
+	<title>Manager Docker</title>
+	<!-- Bootstrap core CSS -->
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
 
-    <title>Manager Docker</title>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				</button>
+				<a class="navbar-brand" href="#">DOCKER MANAGER</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<p class="navbar-text navbar-right">Signed in as: <a href="#" class="navbar-link"> {{ teste }}</a></p></a>
+			</div>
+		</div>
+	</nav>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="{% url "images" %}">Images</a></li>
+					<li><a href="#">Containers</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Nodes</a></li>
+				</ul>
+			</div>
+		
+	
+			{% block images %} {% endblock images %}
 
-    <!-- Custom styles for this template -->
-    <link href="/static/css/dashboard.css" rel="stylesheet">
-
-    <script src="/static/js/ie-emulation-modes-warning.js"></script>
-  </head>
-
-  <body>
-
-	   	{% block navbar %} {% endblock navbar %}
-    	{% block menu %} {% endblock menu %}
-		{% block images %} {% endblock images %}
-    	{% block containers %} {% endblock containers %}
-
-
+		</div>
+	</div>
 	    <!-- Bootstrap core JavaScript
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	    <script src="/static/js/bootstrap.min.js"></script>
+	    
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
 	    <script src="/static/js/docs.min.js"></script>
-	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+	  	-->
 
-  </body>
+	</body>
 </html>
